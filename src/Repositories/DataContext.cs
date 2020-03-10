@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using src.Entities;
+﻿using CreditApi.Repositories.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CreditApi.Repositories
 {

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using src.Modals;
-using src.Requests;
+using CreditApi.Modals;
+using CreditApi.Requests;
 
-namespace src.Services.Interfaces
+namespace CreditApi.Services.Interfaces
 {
     public interface ICreditService
     {

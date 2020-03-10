@@ -1,9 +1,8 @@
 ﻿using System.Threading.Tasks;
-using CreditApi.Repositories;
+using CreditApi.Repositories.Entities;
 using Microsoft.Extensions.Logging;
-using src.Entities;
 
-namespace src.Repositories
+namespace CreditApi.Repositories
 {
     public class CreditRepository : ICreditRepository
     {

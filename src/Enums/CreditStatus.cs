@@ -1,8 +1,8 @@
-﻿namespace src.Enums
+﻿namespace CreditApi.Enums
 {
     public enum CreditStatus
     {
-        Applied,
-        NotApplied
+        NotApplied,
+        Applied
     }
 }

@@ -1,15 +1,14 @@
-﻿using src.Enums;
+﻿using CreditApi.Enums;
 
-namespace src.Modals
+namespace CreditApi.Modals
 {
     public class CreditResult
     {
         public CreditStatus Status { get; set; }
-        public long Limit { get; set; }
-        
+        public decimal Limit { get; set; }
         public string StatusDescription { get; set; }
 
-        public static CreditResult Success(long limit)
+        public static CreditResult Success(decimal limit)
         {
             return new CreditResult
             {

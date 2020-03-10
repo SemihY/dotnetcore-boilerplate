@@ -1,16 +1,16 @@
 using CreditApi.Repositories;
+using CreditApi.Services;
+using CreditApi.Services.Interfaces;
+using CreditApi.Services.LimitCalculator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using src.Repositories;
-using src.Services;
-using src.Services.Interfaces;
 
-namespace src
+namespace CreditApi
 {
     public class Startup
     {
@@ -23,10 +23,11 @@ namespace src
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped(typeof(ICreditRepository),typeof(CreditRepository));
             
+            services.AddTransient(typeof(ILimitCalculatorService),typeof(LimitCalculatorService));
             services.AddTransient(typeof(ICreditScoreService),typeof(CreditScoreService));
             services.AddTransient(typeof(ICreditService),typeof(CreditService));
 

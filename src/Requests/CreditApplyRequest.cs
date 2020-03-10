@@ -1,4 +1,4 @@
-namespace src.Requests
+namespace CreditApi.Requests
 {
     public class CreditApplyRequest
     {

@@ -8,6 +8,6 @@
         public string Surname { get; set; }
         public decimal Salary { get; set; }
         public string TelephoneNumber { get; set; }
-        public long CreditLimit { get; set; }
+        public decimal CreditLimit { get; set; }
     }
 }

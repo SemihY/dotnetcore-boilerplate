@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace src.Services.Interfaces
+namespace CreditApi.Services.Interfaces
 {
     public interface ICreditScoreService
     {

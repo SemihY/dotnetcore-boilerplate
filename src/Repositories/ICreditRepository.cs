@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using src.Entities;
+using CreditApi.Repositories.Entities;
 
-namespace src.Repositories
+namespace CreditApi.Repositories
 {
     public interface ICreditRepository
     {

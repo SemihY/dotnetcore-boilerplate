@@ -13,7 +13,7 @@ RUN dotnet restore "./tests/CreditApi.Tests.csproj"
 COPY . .
 
 RUN dotnet build "./src/CreditApi.csproj" -c Release -o /app/build
-RUN dotnet test ./tests/Xeon.B2bApi.Tests.csproj
+RUN dotnet test ./tests/CreditApi.Tests.csproj
 
 FROM build AS publish
 RUN dotnet publish "./src/CreditApi.csproj" -c Release -o /app/publish

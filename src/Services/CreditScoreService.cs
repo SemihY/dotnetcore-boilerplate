@@ -1,13 +1,13 @@
 ﻿using System.Threading.Tasks;
-using src.Services.Interfaces;
+using CreditApi.Services.Interfaces;
 
-namespace src.Services
+namespace CreditApi.Services
 {
     public class CreditScoreService : ICreditScoreService
     {
         public Task<long> GetScore(long id)
         {
-            return Task.FromResult<long>(12);
+            return Task.FromResult<long>(600);
         }
     }
 }
