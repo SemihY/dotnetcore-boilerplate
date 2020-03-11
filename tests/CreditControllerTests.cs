@@ -1,8 +1,6 @@
 using System.Threading.Tasks;
 using CreditApi.Controllers;
-using CreditApi.Enums;
 using CreditApi.Modals;
-using CreditApi.Repositories.Entities;
 using CreditApi.Requests;
 using CreditApi.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +10,7 @@ using NUnit.Framework;
 
 namespace CreditApi.Tests
 {
-    public class Tests
+    public class CreditControllerTests
     {
         
         private Mock<ICreditService> _mockCreditService;
