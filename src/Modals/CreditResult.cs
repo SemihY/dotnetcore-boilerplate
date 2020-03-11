@@ -8,6 +8,8 @@ namespace CreditApi.Modals
         public decimal Limit { get; set; }
         public string StatusDescription { get; set; }
 
+        private CreditResult() {}
+
         public static CreditResult Success(decimal limit)
         {
             return new CreditResult
