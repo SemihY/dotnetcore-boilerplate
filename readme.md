@@ -12,7 +12,8 @@ $ git clone https://github.com/SemihY/dotnetcore-boilerplate.git
 
 - [ ] First 
 
-```bash  
+```bash
+$ docker-compose build
 $ docker-compose up -d
 ```
 
