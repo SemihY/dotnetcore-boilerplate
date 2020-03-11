@@ -6,17 +6,10 @@ services:
             - "8000:80"
         depends_on:
             - db
-            - rabbitmq
     db:
         image: "mcr.microsoft.com/mssql/server:2017-latest"
         environment:
             SA_PASSWORD: "Your_password123"
             ACCEPT_EULA: "Y"
         ports:
-            - "5433:1433"    
-
-    rabbitmq:
-        image: rabbitmq:3-management
-        ports:
-            - "15672:15672"
-            - "5672:5672"
+            - "5433:1433"
