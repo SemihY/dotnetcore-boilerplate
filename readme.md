@@ -1,3 +1,29 @@
+## Description  
+
+**Credit API** is simple dotnet core application.
+  
+## Cloning  
+
+```bash
+$ git clone https://github.com/SemihY/dotnetcore-boilerplate.git
+``` 
+
+## Installing
+
+- [ ] First 
+
+```bash  
+$ docker-compose up -d
+```
+
+- [ ] Second
+
+You should connect db and create tables.
+
+```sql
+
+Use master
+
 create table Credits
 (
 	Id bigint identity
@@ -10,6 +36,14 @@ create table Credits
 	TelephoneNumber nvarchar(50)  not null,
 	CreditLimit bigint not null
 )
-go
+
+```  
+
+## Running
+
+# Swagger
+
+$ localhost:8000
+
 
 
